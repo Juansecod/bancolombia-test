@@ -2,7 +2,14 @@
 
 **Reto:** Implemente un aplicativo web en Django que permita cargue un modelo ML preentrenado y dado un archivo en Excel con una información de un tema dado, los cargue en el modelo y haga una predición, imprimiendo el resultado en una tabla de la página html. El modelo ML puede ser cualquiera que usted entrene o encuentre en internet respecto a cualquier set de datos. Se evaluará la implementación del aplicativo, más allá de los resultados de un modelo ML.
 
-## Instalación
+## Prerequisitos
+
+Para el correcto funcionamiento de la aplicación se require tener instalado lo siguiente:
+
+- [Python >= 3.12](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/downloads)
+
+## Instalación ⚙
 
 1. El primer paso para usar este programa es descargarlo desde el repositorio con el siguiente comando:
 
@@ -36,29 +43,29 @@
     pip install -r requirements.txt
     ```
 
-    > [!NOTE]
-    > Se recomienda el uso de un entorno virtual para evitar conflictos de versiones o entre librerias que puede tener instalada en su maquina. Para ello ejecutamos los siguiente comandos:
-    >
-    >```sh
-    >python -m venv venv
-    >```
-    >
-    >Esto creara su entorno virtual, ahora lo activaremos:
-    >
-    > - Si esta desde una terminal cmd:
-    >
-    >   ```cmd
-    >   cd venv/Scripts/
-    >   activate.bat
-    >   ```
-    >
-    > - Si esta usando una terminal linux
-    >
-    >   ```sh
-    >   source venv/bin/activate
-    >   ```
-    >
-    > Ya una vez con el entorno virtual activo, puede instalar las dependencias sin ningun conflicto
+> [!NOTE] 
+> Se recomienda el uso de un entorno virtual para evitar conflictos de versiones o entre librerias que puede tener instalada en su maquina. Para ello ejecutamos los siguiente comandos:
+>
+>```sh
+>python -m venv venv
+>```
+>
+>Esto creara su entorno virtual, ahora lo activaremos:
+>
+> - Si esta desde una terminal cmd:
+>
+>   ```cmd
+>   cd venv/Scripts/
+>   activate.bat
+>   ```
+>
+> - Si esta usando una terminal linux
+>
+>   ```sh
+>   source venv/bin/activate
+>   ```
+>
+> Ya una vez con el entorno virtual activo, puede instalar las dependencias sin ningun conflicto
 
 5. Ahora que tenemos nuestras dependencias instaladas, realizaremos las migraciones para evitar errores en el programa. Para ello correremos el siguiente comando:
 
@@ -67,7 +74,7 @@
     python manage.py migrate
     ```
 
-## Ejecutar entorno de desarrollo
+## Ejecutar entorno de desarrollo ▶
 
 Para ejecutar la aplicación ejecutamos el siguiente comando:
 
@@ -77,7 +84,7 @@ python manage.py runserver
 
 Con esto ejecutara de manera local la aplicacion en el puerto `8000`. Para acceder a ella abres tu navegador favorito y accedes a [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
-## Uso
+## Uso 🚩
 
 Para un correcto uso de la aplicacion se recomienda subir archivos de excel o csv, en donde es requerido que contenga las siguientes dos columnas para una correcta prediccion del modelo:
 
@@ -89,3 +96,16 @@ VIGENCIADESDE|Indica el dia que se realizo la toma del valor|
 > [!WARNING]
 >
 > Es de vital importancia que las columnas esten nombradas en mayuscula sostenida y sin espacios, esto debido a que el programa no reconoce otros nombres de columna. Por ello, cuenta en el repositorio con un archivo de ejemplo dentro de la carpeta `TMR Dolar - COP` con el nombre `TMR.csv`.
+
+## Tecnologias usadas 💻
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
+
+## Autor 👨‍💻
+
+- Juan Sebastian Rios Valencia - [@Juansecod](https://github.com/Juansecod)
