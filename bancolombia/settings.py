@@ -79,6 +79,7 @@ WSGI_APPLICATION = 'bancolombia.wsgi.application'
 
 CSRF_COOKIE_SAMESITE = 'None' 
 CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ['https://*.azurewebsites.net','https://*.127.0.0.1']
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
