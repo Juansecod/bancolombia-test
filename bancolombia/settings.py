@@ -55,6 +55,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'bancolombia.urls'
 
@@ -76,6 +77,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'bancolombia.wsgi.application'
 
+CSRF_COOKIE_SAMESITE = 'None' 
+CSRF_COOKIE_SECURE = True
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
