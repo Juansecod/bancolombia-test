@@ -27,7 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
-    "https://bancolombia-test-gvfbhserdtg6e5hy.eastus-01.azurewebsites.net/"
+    "https://bancolombia-test-gvfbhserdtg6e5hy.eastus-01.azurewebsites.net"
 ]
 
 
