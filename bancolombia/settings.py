@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-9lq@k=hlmpa9(fg6+!a$st-ifq^1_g6j*5ls$jjfxo(o@$+ep%
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "127.0.0.1",
-    "https://bancolombia-test-gvfbhserdtg6e5hy.eastus-01.azurewebsites.net"
+    "*"
 ]
 
 
