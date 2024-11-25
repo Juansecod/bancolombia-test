@@ -2,7 +2,7 @@
 
 **Reto:** Implemente un aplicativo web en Django que permita cargue un modelo ML preentrenado y dado un archivo en Excel con una información de un tema dado, los cargue en el modelo y haga una predición, imprimiendo el resultado en una tabla de la página html. El modelo ML puede ser cualquiera que usted entrene o encuentre en internet respecto a cualquier set de datos. Se evaluará la implementación del aplicativo, más allá de los resultados de un modelo ML.
 
-## Instalación:
+## Instalación
 
 1. El primer paso para usar este programa es descargarlo desde el repositorio con el siguiente comando:
 
@@ -28,7 +28,7 @@
     code .
     ```
 
-Esto abrira directamente su editor de codigo configurado como predeterminado.
+    Esto abrira directamente su editor de codigo configurado como predeterminado.
 
 4. Ahora, abriremos una consola en el editor para instalar las dependencia que tiene el proyecto. Con la terminal abierta ejecutamos el siguiente comando:
 
@@ -36,31 +36,33 @@ Esto abrira directamente su editor de codigo configurado como predeterminado.
     pip install -r requirements.txt
     ```
 
-> [!NOTE]
-> Se recomienda el uso de un entorno virtual para evitar conflictos de versiones o entre librerias que puede tener instalada en su maquina. Para ello ejecutamos los siguiente comandos:
->
->```sh
->python -m venv venv
->```
->
->Esto creara su entorno virtual, ahora lo activaremos:
-> - Si esta desde una terminal cmd:
->   ```cmd
->   cd venv/Scripts/
->   activate.bat
->   ```
->
-> - Si esta usando una terminal linux
->   ```sh
->   source venv/bin/activate
->   ```
->
-> Ya una vez con el entorno virtual activo, puede instalar las dependencias sin ningun conflicto
+    > [!NOTE]
+    > Se recomienda el uso de un entorno virtual para evitar conflictos de versiones o entre librerias que puede tener instalada en su maquina. Para ello ejecutamos los siguiente comandos:
+    >
+    >```sh
+    >python -m venv venv
+    >```
+    >
+    >Esto creara su entorno virtual, ahora lo activaremos:
+    >
+    > - Si esta desde una terminal cmd:
+    >
+    >   ```cmd
+    >   cd venv/Scripts/
+    >   activate.bat
+    >   ```
+    >
+    > - Si esta usando una terminal linux
+    >
+    >   ```sh
+    >   source venv/bin/activate
+    >   ```
+    >
+    > Ya una vez con el entorno virtual activo, puede instalar las dependencias sin ningun conflicto
 
 5. Ahora que tenemos nuestras dependencias instaladas, realizaremos las migraciones para evitar errores en el programa. Para ello correremos el siguiente comando:
 
     ```sh
-    cd bancolombia
     python manage.py makemigrations
     python manage.py migrate
     ```
